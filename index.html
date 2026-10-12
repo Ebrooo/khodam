@@ -33,7 +33,7 @@ footer{text-align:center;color:var(--m);font-size:12px;margin-top:14px}
 <h1>كنيسة مارمينا بشبرا</h1><div class="s">أسرة 5 و 6 — خدمة خامسة وسادسة أولاد</div>
 <div class="verse">«لِيَكُنْ كُلُّ شَيْءٍ بِلِيَاقَةٍ وَبِحَسَبِ تَرْتِيبٍ» — ١ كو ١٤ : ٤٠</div></header>
 <div id="app" class="m">جاري التحميل…</div>
-<footer>✝ متابعة لايحة الخدام ✝<br><a href="#" id="lo" style="color:var(--m)">تسجيل الخروج</a></footer>
+<footer>✝ متابعة لائحة الخدام ✝<br><a href="#" id="lo" style="color:var(--m)">تسجيل الخروج</a></footer>
 <script>window.__ready=new Promise(r=>window.__res=r)</script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
 <script>
@@ -42,7 +42,7 @@ const K={viol:"مخالفة",exc:"اعتذار مسبق",stage:"مرحلة إج�
 const KN={sun:"اجتماع الأولاد",srv:"اجتماع الخدام",prep:"التحضير",quiz:"المسابقة",visit:"الافتقاد",...K};
 const ST={p:"حاضر",l:"متأخر",e:"انصرف بدري",a:"غايب",x:"معتذر"},ST3=["","تنبيه","جلسة مع المسؤول","إيقاف مؤقت / إعادة تقييم"];
 const AX=[["الحضور","«لِكُلِّ شَيْءٍ زَمَانٌ، وَلِكُلِّ أَمْرٍ تَحْتَ السَّمَاوَاتِ وَقْتٌ»","الجامعة ٣ : ١"],["التحضير","«اِجْتَهِدْ أَنْ تُقِيمَ نَفْسَكَ لِلَّهِ مُزَكًّى، عَامِلًا لاَ يُخْزَى، مُفَصِّلًا كَلِمَةَ الْحَقِّ بِالاسْتِقَامَةِ»","٢ تيموثاوس ٢ : ١٥"],["التلمذة والتعليم","«لاَحِظْ نَفْسَكَ وَالتَّعْلِيمَ، وَدَاوِمْ عَلَى ذلِكَ، لأَنَّكَ إِذَا فَعَلْتَ هذَا تُخَلِّصُ نَفْسَكَ وَالَّذِينَ يَسْمَعُونَكَ أَيْضًا.»","١ تيموثاوس ٤ : ١٦"],["التعامل مع المخدومين والافتقاد","«الْحَقَّ أَقُولُ لَكُمْ: بِمَا أَنَّكُمْ فَعَلْتُمْ بِأَحَدِ إِخْوَتِي هؤُلاَءِ الأَصَاغِرِ، فَبِي فَعَلْتُمْ.»","متى ٢٥ : ٤٠"]];
-const axHtml=()=>`<details class="card" style="border-inline-start-color:var(--o)"><summary><b>✝ محاور اللايحة وآياتها</b></summary>${AX.map(([t,v,r])=>`<div style="margin-top:8px"><b>${t}</b><div class="m">${v} — ${r}</div></div>`).join("")}</details>`;
+const axHtml=()=>`<details class="card" style="border-inline-start-color:var(--o)"><summary><b>✝ محاور اللائحة وآياتها</b></summary>${AX.map(([t,v,r])=>`<div style="margin-top:8px"><b>${t}</b><div class="m">${v} — ${r}</div></div>`).join("")}</details>`;
 const iso=d=>d.toLocaleDateString("en-CA"),add=(s,n)=>{const d=new Date(s+"T12:00:00");d.setDate(d.getDate()+n);return iso(d)};
 const sun0=()=>{const d=new Date();d.setDate(d.getDate()-((d.getDay()+2)%7));return iso(d)};
 let db,user,leader=false,uid=null,S=[],RC=[],tab="dash",wk=sun0(),ym=wk.slice(0,7),mode="w";
