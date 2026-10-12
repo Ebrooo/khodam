@@ -8,10 +8,11 @@
 :root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);--bg:#f3fafb;--c:#fff;--t:#1f2a33;--m:#6b7b86;--b:#d5e6ea;--a:#128a9a;--o:#f39a1e;--pk:#ef5a7a;--ok:#2e7d4f;--bad:#d63a3a;--wr:#c97a00}
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0f1d21;--c:#172a30;--t:#eaf4f6;--m:#9db4bb;--b:#27424a;--a:#3fc1d2;--ok:#5fc08a;--bad:#ff7a7a;--wr:#f5b84a}}
 :root[data-theme="dark"]{--bg:#0f1d21;--c:#172a30;--t:#eaf4f6;--m:#9db4bb;--b:#27424a;--a:#3fc1d2;--ok:#5fc08a;--bad:#ff7a7a;--wr:#f5b84a}
+*,*::before,*::after{box-sizing:border-box}
 html{scroll-padding-top:env(safe-area-inset-top,0px)}
 body{margin:0;background:var(--bg);color:var(--t);font:15px/1.6 system-ui,"Segoe UI",Tahoma,sans-serif;max-width:860px;margin-inline:auto;padding:0 12px 24px}
 header{background:linear-gradient(135deg,#128a9a,#1aa7b8);color:#fff;border-radius:0 0 28px 28px;padding:16px 14px 18px;margin:0 -12px 12px;text-align:center;position:relative;overflow:hidden;border-bottom:5px solid var(--o)}
-header:before,header:after{content:"✝";position:absolute;top:10px;font-size:26px;opacity:.25}header:before{right:16px}header:after{left:16px}
+header:before,header:after{content:"✠";position:absolute;top:10px;font-size:26px;opacity:.25}header:before{right:16px}header:after{left:16px}
 .logo{width:96px;height:96px;border-radius:50%;background:#fff;border:4px solid var(--o);display:block;margin:0 auto 6px;box-shadow:0 4px 14px #0004}
 header h1{margin:2px 0 0;font-size:21px}header .s{font-size:14px;opacity:.95}
 .verse{font-size:12.5px;background:#ffffff26;display:inline-block;border-radius:99px;padding:2px 14px;margin-top:8px}
@@ -33,7 +34,7 @@ footer{text-align:center;color:var(--m);font-size:12px;margin-top:14px}
 <h1>كنيسة مارمينا بشبرا</h1><div class="s">أسرة 5 و 6 — خدمة خامسة وسادسة أولاد</div>
 <div class="verse">«لِيَكُنْ كُلُّ شَيْءٍ بِلِيَاقَةٍ وَبِحَسَبِ تَرْتِيبٍ» — ١ كو ١٤ : ٤٠</div></header>
 <div id="app" class="m">جاري التحميل…</div>
-<footer>☦ متابعة لائحة الخدام ☦<br><a href="#" id="lo" style="color:red(--m)">تسجيل الخروج</a></footer>
+<footer>☦ متابعة لائحة الخدام ☦<br><a href="#" id="lo" style="color:var(--m)">تسجيل الخروج</a></footer>
 <script>window.__ready=new Promise(r=>window.__res=r)</script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
 <script>
