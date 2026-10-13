@@ -1,0 +1,27 @@
+{
+ "name": "أسرة 5 و 6 — كنيسة مارمينا بشبرا",
+ "short_name": "أسرة 5 و 6",
+ "description": "متابعة لايحة الخدام",
+ "start_url": "./",
+ "scope": "./",
+ "display": "standalone",
+ "orientation": "portrait",
+ "dir": "rtl",
+ "lang": "ar",
+ "theme_color": "#128a9a",
+ "background_color": "#f3fafb",
+ "icons": [
+  {
+   "src": "icon-192.png",
+   "sizes": "192x192",
+   "type": "image/png",
+   "purpose": "any"
+  },
+  {
+   "src": "icon-512.png",
+   "sizes": "512x512",
+   "type": "image/png",
+   "purpose": "any"
+  }
+ ]
+}
